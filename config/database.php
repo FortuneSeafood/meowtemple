@@ -17,7 +17,7 @@ return [
     'connections' => [
         'user' => [
             'driver' => 'mysql',
-            'host' => '127.0.0.1',
+            'host' => 'mysql',
             'port' => 3306,
             'database' => 'user',
             'username' => 'develop',
