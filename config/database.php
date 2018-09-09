@@ -13,13 +13,13 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'meow'),
     'connections' => [
-        'user' => [
+        'meow' => [
             'driver' => 'mysql',
             'host' => 'mysql',
             'port' => 3306,
-            'database' => 'user',
+            'database' => 'meow',
             'username' => 'develop',
             'password' => 'qwe123',
             'unix_socket' => '',

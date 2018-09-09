@@ -37,9 +37,25 @@ class RouteServiceProvider extends ServiceProvider
     {
         $this->mapApiRoutes();
 
+        $this->mapTarotRoutes();
+
         $this->mapWebRoutes();
 
         //
+    }
+
+    /**
+     * Define the "tarot" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapTarotRoutes()
+    {
+        Route::middleware(['api', 'passport'])
+             ->namespace($this->namespace)
+             ->group(base_path('routes/tarot.php'));
     }
 
     /**
