@@ -13,15 +13,15 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'meow'),
     'connections' => [
-        'user' => [
+        'meow' => [
             'driver' => 'mysql',
-            'host' => 'mysql',
-            'port' => 3306,
-            'database' => 'user',
-            'username' => 'develop',
-            'password' => 'qwe123',
+            'host' => '127.0.0.1',
+            'port' => 33060,
+            'database' => 'meow',
+            'username' => 'root',
+            'password' => 'root',
             'unix_socket' => '',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',

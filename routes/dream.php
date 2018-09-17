@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| Dream Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -11,11 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('/test1', 'Example\Test@testGetAndService');
-Route::get('/test2', 'Example\Test@testGetDB');
-
-
+#解夢
+Route::get('/dream/{dreamID}', 'Dream\Explanation@explan');
