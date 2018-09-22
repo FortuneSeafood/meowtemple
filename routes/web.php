@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::get('/draw/{systemID}/{cards}', 'Tarot\Divination@draw');
 Route::get('/test1', 'Example\Test@testGetAndService');
 Route::get('/test2', 'Example\Test@testGetDB');
