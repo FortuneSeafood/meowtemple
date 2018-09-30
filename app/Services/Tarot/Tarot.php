@@ -43,7 +43,7 @@ class Tarot
      * @param [arrat] $_aCard 牌
      * @return array
      */
-    public function selectUprightOrReversed($_aCard): array
+    private function selectUprightOrReversed($_aCard): array
     {
         $iIsReversed = rand(0, 1);
         $aCardMeanings = json_decode($_aCard['cardMeanings'], true);

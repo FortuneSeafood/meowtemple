@@ -53,7 +53,8 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapTarotRoutes()
     {
-        Route::middleware(['api', 'passport'])
+        Route::prefix('tarot')
+             ->middleware(['web'])
              ->namespace($this->namespace)
              ->group(base_path('routes/tarot.php'));
     }
