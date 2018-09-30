@@ -24,7 +24,7 @@ class Test extends Controller
 
     public function testGetDB(Request $_oRequest)
     {
-        $oResult2 = DB::connection('user')->select('SELECT * FROM user_info WHERE userID = :id', ['id' => 1]);
+        $oResult2 = DB::connection('meow')->select('SELECT * FROM user_info WHERE userID = :id', ['id' => 1]);
         dd($oResult2);
         // echo 'Test1';
     }
