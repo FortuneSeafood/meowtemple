@@ -1,20 +1,27 @@
 <template>
-    <div>13
-        <Header></Header>
-        <Footer></Footer>
-    </div>
+    <el-container>
+    <el-header>
+      <Header></Header>
+    </el-header>
+    <el-main>
+      <Main></Main>
+    </el-main>
+    <el-footer>
+      <Footer></Footer>
+    </el-footer>
+  </el-container>
 </template>
 
 <script>
 import Header from "../../components/layouts/TopBar";
-// import Main from '@/components/main/main';
+import Main from "../../components/layouts/Main";
 import Footer from "../../components/layouts/FooterBar";
 
 export default {
   name: "Style",
   components: {
     Header,
-    // Main,
+    Main,
     Footer,
   },
 };

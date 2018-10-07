@@ -17,8 +17,25 @@ export default new VueRouter({
     routes: [
         {
             path: "/",
-            name: "home",
+            name: "meow",
             component: resolve => void require(["../page/layouts/style.vue"], resolve),
+            children: [
+                {
+                    path: 'home',
+                    component: resolve => void require(["../page/home/home.vue"], resolve),
+                }
+            ]
+        },
+        {
+            path: "/tarot",
+            name: "tarot",
+            component: resolve => void require(["../page/layouts/style.vue"], resolve),
+            children: [
+                {
+                  path: 'draw',
+                  component: resolve => void require(["../page/tarot/draw.vue"], resolve),
+                }
+            ]
         },
     ],
 });
