@@ -1,14 +1,14 @@
 <template>
     <el-container>
-    <el-header>
+    <el-header class="header" height="69px">
       <Header></Header>
     </el-header>
     <el-main>
       <Main></Main>
     </el-main>
-    <el-footer>
+    <!-- <el-footer>
       <Footer></Footer>
-    </el-footer>
+    </el-footer> -->
   </el-container>
 </template>
 
@@ -24,10 +24,35 @@ export default {
     Main,
     Footer,
   },
+  data() {
+    return {
+      customizeClass: 'active',
+    };
+  },
+  beforeCreate: function() {
+        document.getElementsByTagName("body")[0].className="bg";
+    },
+  beforeDestroy: function() {
+      document.body.removeAttribute("class","bg");
+  }
 };
 </script>
 
 <style>
+.header{
+  width:100%;
+  background-color: #3A2042;
+  z-index: 99;
+}
+.bg {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(left top, #042334, #124c6a);
+  /* background: linear-gradient(bottom right, #042334, #124c6a);
+  background: linear-gradient(bottom right, #042334, #124c6a); */
+}
 /* .el-header {
   padding: 0px;
 }

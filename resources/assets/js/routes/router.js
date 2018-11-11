@@ -27,6 +27,17 @@ export default new VueRouter({
             ]
         },
         {
+            path: "/sign",
+            name: "sign",
+            component: resolve => void require(["../page/layouts/style.vue"], resolve),
+            children: [
+                {
+                  path: 'ready',
+                  component: resolve => void require(["../page/sign/index.vue"], resolve),
+                }
+            ]
+        },
+        {
             path: "/tarot",
             name: "tarot",
             component: resolve => void require(["../page/layouts/style.vue"], resolve),

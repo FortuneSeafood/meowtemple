@@ -11,25 +11,21 @@ window.Vue = require("vue");
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import App from './App.vue';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import router from "./routes/router";
 Vue.use(ElementUI)
+
+library.add(fas)
+
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
+Vue.config.productionTip = false
+
 // Vue.use(VueRouter);
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-// Vue.component("app", require("./App.vue"));
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
-// Vue.component('topbar', require('./components/layouts/TopBar.vue'));
-// Vue.component('footerbar', require('./components/layouts/FooterBar.vue'));
-// import Header from './components/layouts/Header.vue'
-// import App from './App.vue';
-// import ElementUI from 'element-ui';
-// import 'element-ui/lib/theme-chalk/index.css';
 
-// Vue.use(ElementUI);
 
 const app = new Vue({
     el: "#app",
