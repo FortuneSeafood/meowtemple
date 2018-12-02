@@ -1,7 +1,7 @@
 <template>
 <div class='topbox'>
   <div class="logo leftbox">
-     <a href="" title="Meow temple" id="logo"><img src="images/logo.png" alt="" height="60px" width="204px"></a>
+     <a href="" title="Meow temple" id="logo"><img src="images/logo.png" alt="" height="79px" width="204px"></a>
    </div>
 <el-menu :default-active="activeIndex" class="el-menu rightbox" mode="horizontal" @select="handleSelect"
   background-color="#3A2042"
@@ -23,7 +23,8 @@ export default {
     },
     methods: {
       handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+        console.log(123);
+        //console.log(key, keyPath);
       }
     }
 };
