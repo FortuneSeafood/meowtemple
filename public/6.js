@@ -1,58 +1,6 @@
-webpackJsonp([3],{
+webpackJsonp([6],{
 
-/***/ 203:
-/***/ (function(module, exports, __webpack_require__) {
-
-var disposed = false
-function injectStyle (ssrContext) {
-  if (disposed) return
-  __webpack_require__(227)
-}
-var normalizeComponent = __webpack_require__(79)
-/* script */
-var __vue_script__ = __webpack_require__(229)
-/* template */
-var __vue_template__ = __webpack_require__(230)
-/* template functional */
-var __vue_template_functional__ = false
-/* styles */
-var __vue_styles__ = injectStyle
-/* scopeId */
-var __vue_scopeId__ = null
-/* moduleIdentifier (server only) */
-var __vue_module_identifier__ = null
-var Component = normalizeComponent(
-  __vue_script__,
-  __vue_template__,
-  __vue_template_functional__,
-  __vue_styles__,
-  __vue_scopeId__,
-  __vue_module_identifier__
-)
-Component.options.__file = "resources/assets/js/page/home/home.vue"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-810f707e", Component.options)
-  } else {
-    hotAPI.reload("data-v-810f707e", Component.options)
-  }
-  module.hot.dispose(function (data) {
-    disposed = true
-  })
-})()}
-
-module.exports = Component.exports
-
-
-/***/ }),
-
-/***/ 206:
+/***/ 205:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*
@@ -71,7 +19,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(207)
+var listToStyles = __webpack_require__(206)
 
 /*
 type StyleObject = {
@@ -281,7 +229,7 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 
-/***/ 207:
+/***/ 206:
 /***/ (function(module, exports) {
 
 /**
@@ -315,23 +263,75 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
-/***/ 227:
+/***/ 235:
+/***/ (function(module, exports, __webpack_require__) {
+
+var disposed = false
+function injectStyle (ssrContext) {
+  if (disposed) return
+  __webpack_require__(236)
+}
+var normalizeComponent = __webpack_require__(78)
+/* script */
+var __vue_script__ = __webpack_require__(238)
+/* template */
+var __vue_template__ = __webpack_require__(239)
+/* template functional */
+var __vue_template_functional__ = false
+/* styles */
+var __vue_styles__ = injectStyle
+/* scopeId */
+var __vue_scopeId__ = null
+/* moduleIdentifier (server only) */
+var __vue_module_identifier__ = null
+var Component = normalizeComponent(
+  __vue_script__,
+  __vue_template__,
+  __vue_template_functional__,
+  __vue_styles__,
+  __vue_scopeId__,
+  __vue_module_identifier__
+)
+Component.options.__file = "resources/assets/js/page/sign/index.vue"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-a1b84184", Component.options)
+  } else {
+    hotAPI.reload("data-v-a1b84184", Component.options)
+  }
+  module.hot.dispose(function (data) {
+    disposed = true
+  })
+})()}
+
+module.exports = Component.exports
+
+
+/***/ }),
+
+/***/ 236:
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(228);
+var content = __webpack_require__(237);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(206)("369e2eae", content, false, {});
+var update = __webpack_require__(205)("55680490", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-810f707e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-810f707e\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./home.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a1b84184\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a1b84184\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -342,22 +342,22 @@ if(false) {
 
 /***/ }),
 
-/***/ 228:
+/***/ 237:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(78)(false);
+exports = module.exports = __webpack_require__(77)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n.center_banner::before{\n  content:'';\n  display: inline-block;\n  height: 100%;\n  width: 0;\n  vertical-align: middle;\n}\n.center_banner .content{\n  width: 100%;\n  display: inline-block;\n  vertical-align: middle;\n}\n#poempic_00{\n    position:absolute;\n    top:69px;\n    left:0px;\n    z-index:1;\n}\n#poempic_01{\n    position:absolute;\n    top:69px;\n    left:0px;\n    z-index:1;\n}\n#poempic_02{\n    position:absolute;\n    top:69px;\n    left:0px;\n    z-index:2;\n}\n#poempic_03{\n    position:absolute;\n    top:69px;\n    left:0px;\n    z-index:2;\n}\n#poempic_05{\n    position:absolute;\n    bottom: 0;\n    left:0px;\n    z-index:2;\n}\n#poempic_06{\n    position:absolute;\n    bottom: 0;\n    left:0px;\n    z-index:3;\n}\n#poempic_07{\n    position:absolute;\n    bottom: 0;\n    left:0px;\n    z-index:5;\n}\n#poempic_08{\n    position:absolute;\n    bottom: 0;\n    left:0px;\n    z-index:5;\n}\n.poem_content{\n    width: 300px;\n    position:absolute;\n    top: 230px;\n    margin-left: -150px;\n    z-index:2;\n    color: white;\n    display: inline-block;\n    vertical-align: middle;\n}\n.poem_title{\n  font-size: 16px;\n  font-weight: bold;\n}\n.poem_item{\n  font-size: 13px;\n  list-style-type: none;\n  text-align: left;\n}\n.poem_btn{\n  background-color: #f6c26c;\n  color:#002b3d;\n  font-size: 16px;\n  font-weight: 900;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ 229:
+/***/ 238:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -367,30 +367,164 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 // import TopBar from "../../components/layouts/TopBar";
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "Home"
+  name: "SignIndex"
 });
 
 /***/ }),
 
-/***/ 230:
+/***/ 239:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n  home\n")])
+  return _c("div", { staticClass: "center_banner" }, [
+    _c("div", { staticClass: "content", attrs: { id: "poempic_00" } }),
+    _vm._v(" "),
+    _vm._m(0),
+    _vm._v(" "),
+    _vm._m(1),
+    _vm._v(" "),
+    _vm._m(2),
+    _vm._v(" "),
+    _vm._m(3),
+    _vm._v(" "),
+    _vm._m(4),
+    _vm._v(" "),
+    _vm._m(5),
+    _vm._v(" "),
+    _vm._m(6),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "poem_content" },
+      [
+        _vm._m(7),
+        _vm._v(" "),
+        _vm._m(8),
+        _vm._v(" "),
+        _c(
+          "el-button",
+          { staticClass: "poem_btn", attrs: { type: "info", round: "" } },
+          [_vm._v("開始求籤")]
+        )
+      ],
+      1
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_01" } }, [
+      _c("img", { attrs: { src: "images/poempic_01.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_02" } }, [
+      _c("img", { attrs: { src: "images/poempic_02.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_03" } }, [
+      _c("img", { attrs: { src: "images/poempic_03.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_05" } }, [
+      _c("img", { attrs: { src: "images/poempic_05.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_06" } }, [
+      _c("img", { attrs: { src: "images/poempic_06.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_07" } }, [
+      _c("img", { attrs: { src: "images/poempic_07.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_08" } }, [
+      _c("img", { attrs: { src: "images/poempic_08.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "poem_title" }, [
+      _vm._v("需要為你指點迷津嗎？"),
+      _c("br"),
+      _vm._v("只要虔誠的求問，就能獲得指引喔！")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "poem_item" }, [
+      _c("li", [_vm._v("1.虔誠稟報您的姓名、年歲、住址、求問事項")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("2.點選開始求籤")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("3.擲筊請示是否為此籤")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("4.若為聖筊則可觀看詩籤內容")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("5.若為笑筊或陰筊則需重新求籤")])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-810f707e", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-a1b84184", module.exports)
   }
 }
 
