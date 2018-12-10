@@ -1,5 +1,5 @@
 <template>
-    <el-container>
+  <el-container>
     <el-header class="header" height="69px">
       <Header></Header>
     </el-header>
@@ -49,18 +49,21 @@ export default {
   height: 100%;
   padding: 0;
   margin: 0;
-  background: linear-gradient(left top, #042334, #124c6a);
+  background: linear-gradient(to left top, #042334, #124c6a);
   /* background: linear-gradient(bottom right, #042334, #124c6a);
   background: linear-gradient(bottom right, #042334, #124c6a); */
 }
+.bg>div, .el-container {
+  height: 100%;
+}
 /* .el-header {
   padding: 0px;
-}
+}*/
 .el-main {
-
-  min-height: 1000px;
+  height: 100%;
+  padding: 0;
 }
-.el-footer {
+/*.el-footer {
   background-color: #f5f5f5;
 } */
 </style>

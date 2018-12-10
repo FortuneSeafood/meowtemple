@@ -16,6 +16,9 @@ class Divination extends Controller
     {
         $this->oLottery = $_oLottery;
     }
+    /**
+     * 抽籤頁面
+     */
     public function index()
     {
         return view('lottery');

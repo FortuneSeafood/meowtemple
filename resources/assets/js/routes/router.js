@@ -38,6 +38,10 @@ export default new VueRouter({
                 {
                   path: 'ready',
                   component: resolve => void require(["../page/sign/index.vue"], resolve),
+                },
+                {
+                  path: 'draw',
+                  component: resolve => void require(["../page/sign/draw.vue"], resolve),
                 }
             ]
         },
