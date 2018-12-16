@@ -20,7 +20,7 @@ return [
             'host' => 'mysql',
             'port' => 3306,
             'database' => 'meow',
-            'username' => 'develop',
+            'username' => 'root',
             'password' => 'qwe123',
             'unix_socket' => '',
             'charset' => 'utf8mb4',

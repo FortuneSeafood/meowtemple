@@ -23,6 +23,10 @@ export default new VueRouter({
                 {
                     path: 'home',
                     component: resolve => void require(["../page/home/home.vue"], resolve),
+                },
+                {
+                    path: 'lottery',
+                    component: resolve => void require(["../page/lottery/draw.vue"], resolve)
                 }
             ]
         },
@@ -34,6 +38,10 @@ export default new VueRouter({
                 {
                   path: 'ready',
                   component: resolve => void require(["../page/sign/index.vue"], resolve),
+                },
+                {
+                  path: 'draw',
+                  component: resolve => void require(["../page/sign/draw.vue"], resolve),
                 }
             ]
         },
@@ -47,6 +55,6 @@ export default new VueRouter({
                   component: resolve => void require(["../page/tarot/draw.vue"], resolve),
                 }
             ]
-        },
+        }
     ],
 });

@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/draw/{systemID}/{cards}', 'Tarot\Divination@draw');
 Route::get('/test1', 'Example\Test@testGetAndService');
 Route::get('/test2', 'Example\Test@testGetDB');
+Route::get('/lottery/get/{LotteryID}', 'Lottery\Divination@get');
+Route::get('/lottery/index', 'Lottery\Divination@index');
