@@ -42,6 +42,10 @@ export default new VueRouter({
                 {
                   path: 'draw',
                   component: resolve => void require(["../page/sign/draw.vue"], resolve),
+                },
+                {
+                  path: 'checkdraw',
+                  component: resolve => void require(["../page/sign/checkdraw.vue"], resolve),
                 }
             ]
         },
