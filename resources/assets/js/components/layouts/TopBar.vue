@@ -7,17 +7,15 @@
         <div class="main clearfix">
             <nav id="menu" class="nav"><button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>
                 <ul>
-                    <li v-on:mouseenter="show = true" v-on:mouseleave="show = false">
-                      <transition name="bounce">
-                        <a href="/#/sign/ready" v-if="show" >
+                    <li id="slide_down" @mouseenter="enter()" @mouseleave="leave()" :class="{ slide: isActive }">
+                        <a href="/#/sign/ready" >
                             <span class="icon"></span>
                             <span class="menu_icon">
                                 <img src="images/poem.png"><div class="menu_text">指路詩籤</div>
                             </span>
                         </a>
-                      </transition>
                     </li>
-                    <li>
+                    <li id="slide_down2" @mouseenter="enter2()" @mouseleave="leave2()" :class="{ slide2: isActive2 }">
                         <a href="">
                             <span class="icon"></span>
                             <span class="menu_icon">
@@ -25,7 +23,7 @@
                             </span>
                         </a>
                     </li>
-                    <li>
+                    <li id="slide_down3" @mouseenter="enter3()" @mouseleave="leave3()" :class="{ slide3: isActive3 }">
                         <a href="">
                             <span class="icon"></span>
                             <span class="menu_icon">
@@ -44,33 +42,74 @@ export default {
   name: "TopBar",
   data() {
     return {
-      show: true,
+      isActive: false,
+      isActive2: false,
+      isActive3: false,
+      // show: true,
+      // className: '',
     };
   },
+  // mounted: function () {
+  //   var self = this;
+  //   setInterval(function () {
+  //     self.show = !self.show;
+  //   }, 1000);
+  // }
   methods: {
-    // mouseIn() {
+    enter() {
+      this.isActive = true;
+    },
+    leave() {
+      this.isActive = false;
+    },
+    enter2() {
+      this.isActive2 = true;
+    },
+    leave2() {
+      this.isActive2 = false;
+    },
+    enter3() {
+      this.isActive3 = true;
+    },
+    leave3() {
+      this.isActive3 = false;
+    },
+    mouseIn() {
     //   this.show = !this.show;
-    //   console.log(123);
+      // console.log(123);
     //   console.log(this.show);
-    // },
-    // mouseOver() {
-    //   this.show = !this.show;
-    //   console.log(4444);
-    //   console.log(this.show);
-    // },
+    },
+    mouseOver() {
+      // this.class = 'bounce-enter-active';
+      // this.show = !this.show;
+      // console.log(4444);
+      // console.log(this.show);
+    },
   },
 };
 </script>
 <style>
-/* .bounce-leave-active,.bounce-enter-active{
-    transition:  all 1s ease;
+#slide_down {
+  padding-top: 0px;
+  transition: 0.5s;
 }
-.bounce-leave-active,.bounce-enter{
-    height: 500px
+#slide_down.slide {
+  padding-top: 21px;
 }
-.bounce-leave,.bounce-enter-active{
-    height: 0px;
-} */
+#slide_down2 {
+  padding-top: 0px;
+  transition: 0.5s;
+}
+#slide_down2.slide2 {
+  padding-top: 21px;
+}
+#slide_down3 {
+  padding-top: 0px;
+  transition: 0.5s;
+}
+#slide_down3.slide3 {
+  padding-top: 21px;
+}
 
 .rightbox {
   float: right;

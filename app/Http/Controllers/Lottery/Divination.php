@@ -33,7 +33,6 @@ class Divination extends Controller
     {
         $aData = $this->oLottery->draw($_iLotteryID);
         // return view('lottery', ['data' => json_encode($aData)]);
-
         return response()->json([
             'result' => true,
             'data' => $aData
