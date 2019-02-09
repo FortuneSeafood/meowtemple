@@ -28,4 +28,12 @@ class Test extends Controller
         dd($oResult2);
         // echo 'Test1';
     }
+
+    public function testVue(Request $_oRequest)
+    {
+        return response()->json([
+            'result' => true,
+            'data' => 'It\'s Data',
+        ]);
+    }
 }

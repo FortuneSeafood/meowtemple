@@ -16,10 +16,10 @@
       getResult() {
         let self = this;
         axios({
-          methods: 'get',
-          url: 'http://www.fate.com.tw/fateapi/lottery/get/0'
-        }).then((resp) => {
-          self.result = resp.data.data;
+          methods: 'post',
+          url: '/lottery/get/0'
+        }).then((response) => {
+          self.result = response.data.data;
         });
       }
     }
