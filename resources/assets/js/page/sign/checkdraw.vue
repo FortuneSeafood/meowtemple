@@ -9,7 +9,7 @@
     <div class="poem_content">
       <div class="content_bottom">
         <p class="poem_title">喵~ 聖茭!就是這支籤了，</br>趕緊來看看詩籤上說些甚麼吧!</br>詩籤號碼：{{getNumber()}}</p>
-        <el-button class="poem_btn" type="info" round>觀看詩籤</el-button>
+        <el-button class="poem_btn" type="info" round><a href="/#/sign/drawinfo">觀看詩籤</a></el-button>
       </div>
     </div>
   </div>

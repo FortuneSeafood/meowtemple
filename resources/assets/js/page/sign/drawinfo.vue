@@ -9,8 +9,8 @@
     <div id="poempic_08" class="content"></div>
     <div class="poem_content">
       <div class="content_bottom">
-        <p class="poem_title">喵~ 你抽到的籤號是第<span id="lot_num">{{getNumber()}}</span>籤耶，</br>趕緊擲筊問問看是不是這支籤...</p>
-        <el-button class="poem_btn" type="info" round><a href="/#/sign/checkdraw">開始擲筊</a></el-button>
+        <p class="poem_title">詩籤號碼：{{getNumber()}}</p>
+        <el-button class="poem_btn" type="info" round><a href="/#/sign/ready">繼續求籤</a></el-button>
       </div>
     </div>
   </div>
