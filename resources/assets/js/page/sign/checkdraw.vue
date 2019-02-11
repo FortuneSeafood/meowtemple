@@ -4,13 +4,12 @@
     <div id="poempic_02" class="content"></div>
     <div id="poempic_03" class="content"></div>
     <div id="poempic_05" class="content"></div>
-    <div id="poempic_06" class="content"></div>
     <div id="poempic_07" class="content"></div>
     <div id="poempic_08" class="content"></div>
     <div class="poem_content">
       <div class="content_bottom">
-        <p class="poem_title">喵~ 你抽到的籤號是第<span id="lot_num">{{getNumber()}}</span>籤耶，</br>趕緊擲筊問問看是不是這支籤...</p>
-        <el-button class="poem_btn" type="info" round><a href="/#/sign/checkdraw">開始擲筊</a></el-button>
+        <p class="poem_title">喵~ 聖茭!就是這支籤了，</br>趕緊來看看詩籤上說些甚麼吧!</br>詩籤號碼：{{getNumber()}}</p>
+        <el-button class="poem_btn" type="info" round><a href="/#/sign/drawinfo">觀看詩籤</a></el-button>
       </div>
     </div>
   </div>
@@ -21,17 +20,6 @@ export default {
   name: "SignIndex",
   methods: {
     getNumber() {
-      const title = '抽籤';
-      const content = '內容';
-       axios
-        .post('/lottery/get/0')
-        .then(response => {
-          // const post = response.data.post;
-
-          console.log(response.data);
-          // this.$router.push(`/${post.id}`);
-        });
-      // console.log(data);
       return Math.floor(Math.random() * 60) + 1;
     }
   }
@@ -42,6 +30,9 @@ export default {
   position: relative;
   height: 100%;
   min-height: 465px;
+  max-height: 532px;
+  max-width: 1024px;
+  margin:auto;
 }
 #poempic_01 {
   background: url(/images/poempic_01.png) -40px 0px no-repeat;
@@ -59,14 +50,7 @@ export default {
   width: 495px;
   height: 370px;
 }
-#poempic_03 {
-  background: url(/images/poempic_03.png) -780px 0px no-repeat;
-  position: absolute;
-  right: 20%;
-  z-index: 2;
-  width: 160px;
-  height: 160px;
-}
+
 #poempic_05 {
   background: url(/images/poempic_05.png) -110px -375px no-repeat;
   position: absolute;
