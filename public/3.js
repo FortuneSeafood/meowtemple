@@ -6,19 +6,20 @@ webpackJsonp([3],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(249)
+  __webpack_require__(269)
+  __webpack_require__(274)
 }
 var normalizeComponent = __webpack_require__(78)
 /* script */
 var __vue_script__ = __webpack_require__(251)
 /* template */
-var __vue_template__ = __webpack_require__(252)
+var __vue_template__ = __webpack_require__(271)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-0429dc36"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -315,53 +316,30 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
-/***/ 249:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(250);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(210)("615e294f", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./drawinfo.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./drawinfo.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 250:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(79)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.center_banner {\n  position: relative;\n  height: 100%;\n  min-height: 465px;\n}\n#poempic_01 {\n  background: url(/images/poempic_01.png) -40px 0px no-repeat;\n  position: absolute;\n  left: 4%;\n  z-index: 1;\n  width: 96%;\n  height: 205px;\n}\n#poempic_02 {\n  background: url(/images/poempic_02.png) -480px 0px no-repeat;\n  position: absolute;\n  right: 5%;\n  z-index: 2;\n  width: 495px;\n  height: 370px;\n}\n#poempic_03 {\n  background: url(/images/poempic_03.png) -780px 0px no-repeat;\n  position: absolute;\n  right: 20%;\n  z-index: 2;\n  width: 160px;\n  height: 160px;\n}\n#poempic_05 {\n  background: url(/images/poempic_05.png) -110px -375px no-repeat;\n  position: absolute;\n  bottom: 0;\n  left: 11%;\n  z-index: 2;\n  width: 89%;\n  height: 124px;\n}\n#poempic_06 {\n  background: url(/images/poempic_09.png) -660px -50px no-repeat;\n  position: absolute;\n  bottom: 40px;\n  right: 40%;\n  z-index: 3;\n  width: 210px;\n  height: 430px;\n}\n#poempic_07 {\n  background: url(/images/poempic_07.png) -185px -398px no-repeat;\n  position: absolute;\n  bottom: 0;\n  left: 18.5%;\n  z-index: 5;\n  width: 81.5%;\n  height: 102px;\n}\n#poempic_08 {\n  background: url(/images/poempic_08.png) -560px -430px no-repeat;\n  position: absolute;\n  bottom: 0;\n  left: 55%;\n  z-index: 5;\n  width: 45%;\n  height: 70px;\n}\n.poem_content {\n  width: 300px;\n  height: 300px;\n  position: absolute;\n  top: 10%;\n  right: 13%;\n  z-index: 99;\n  color: white;\n  display: inline-block;\n  vertical-align: bottom;\n  text-align: center;\n}\n.content_bottom {\n  position: absolute;\n  bottom: 0;\n  width: 100%;\n}\n.poem_title {\n  font-size: 16px;\n  font-weight: bold;\n}\n#lot_num {\n  font-size: 30px;\n}\n.poem_btn {\n  background-color: #f6c26c;\n  color: #002b3d;\n  font-size: 16px;\n  font-weight: 900;\n}\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ 251:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -387,12 +365,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     getNumber: function getNumber() {
       var title = '抽籤';
       var content = '內容';
-      axios.post('/lottery/get/0').then(function (response) {
-        // const post = response.data.post;
+      //  axios
+      //   .post('/lottery/get/0')
+      //   .then(response => {
+      // const post = response.data.post;
 
-        console.log(response.data);
-        // this.$router.push(`/${post.id}`);
-      });
+      // console.log(response.data);
+      // this.$router.push(`/${post.id}`);
+      // });
       // console.log(data);
       return Math.floor(Math.random() * 60) + 1;
     }
@@ -401,7 +381,49 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 252:
+/***/ 269:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(270);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(210)("58811614", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./drawinfo.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./drawinfo.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 270:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(79)(false);
+// imports
+exports.push([module.i, "@import url(/css/basicstyle.css);", ""]);
+
+// module
+exports.push([module.i, "\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 271:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -411,10 +433,6 @@ var render = function() {
   return _c("div", { staticClass: "center_banner" }, [
     _c("div", { staticClass: "content", attrs: { id: "poempic_01" } }),
     _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_02" } }),
-    _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_03" } }),
-    _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_05" } }),
     _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_06" } }),
@@ -423,31 +441,71 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_08" } }),
     _vm._v(" "),
-    _c("div", { staticClass: "poem_content" }, [
-      _c(
-        "div",
-        { staticClass: "content_bottom" },
-        [
-          _c("p", { staticClass: "poem_title" }, [
-            _vm._v("詩籤號碼：" + _vm._s(_vm.getNumber()))
-          ]),
-          _vm._v(" "),
-          _c(
-            "el-button",
-            { staticClass: "poem_btn", attrs: { type: "info", round: "" } },
-            [
-              _c("a", { attrs: { href: "/#/sign/ready" } }, [
-                _vm._v("繼續求籤")
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ])
+    _c(
+      "div",
+      { staticClass: "poem_content poem_content1" },
+      [
+        _c("p", { staticClass: "poem_title poem_title1" }, [
+          _vm._v("詩籤號碼：" + _vm._s(_vm.getNumber()))
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "el-button",
+          {
+            staticClass: "poem_btn poem_btn1",
+            attrs: { type: "info", round: "" }
+          },
+          [_c("a", { attrs: { href: "/#/sign/ready" } }, [_vm._v("繼續求籤")])]
+        )
+      ],
+      1
+    )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "poem_table poem_table1" }, [
+      _c("table", { staticClass: "table_style" }, [
+        _c("tr", [
+          _c("td", [
+            _c("p", [_vm._v("丁口")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("官司")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("婚姻")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("行人")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("功名")])
+          ]),
+          _vm._v(" "),
+          _c("td", { staticClass: "last_row", attrs: { rowspan: "2" } }, [
+            _vm._v("湄洲天上聖母籤")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [
+            _c("div", [_vm._v("田畜")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("失物")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("出行")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("疾病")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("生意")])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
@@ -456,6 +514,48 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-0429dc36", module.exports)
   }
 }
+
+/***/ }),
+
+/***/ 274:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(275);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(210)("a1c4bd60", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./drawinfo.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./drawinfo.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 275:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(79)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\ntd > p {\n  -webkit-writing-mode: vertical-lr;\n  -ms-writing-mode: tb-rl;\n      writing-mode: vertical-rl;\n}\n.last_row {\n  width: 10%;\n  height: 100%;\n}\n.table_style {\n  border: black solid;\n  width: 100%;\n  height: 100%;\n}\n.poem_content1 {\n  width: 500px;\n  height: 400px;\n}\n.poem_btn1 {\n  position: absolute;\n  bottom: 0px;\n  right:0px;\n}\n.poem_title1 {\n  text-align: left;\n}\n.poem_table1 {\n  width: 100%;\n  height: 290px;\n}\n", ""]);
+
+// exports
+
 
 /***/ })
 

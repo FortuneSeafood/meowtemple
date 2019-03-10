@@ -6,19 +6,20 @@ webpackJsonp([5],{
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(245)
+  __webpack_require__(266)
+  __webpack_require__(272)
 }
 var normalizeComponent = __webpack_require__(78)
 /* script */
 var __vue_script__ = __webpack_require__(247)
 /* template */
-var __vue_template__ = __webpack_require__(248)
+var __vue_template__ = __webpack_require__(268)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-03fc2db8"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -315,54 +316,11 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
-/***/ 245:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(246);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(210)("5be62248", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./checkdraw.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./checkdraw.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 246:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(79)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.center_banner {\r\n  position: relative;\r\n  height: 100%;\r\n  min-height: 465px;\r\n  max-height: 532px;\r\n  max-width: 1024px;\r\n  margin:auto;\n}\n#poempic_01 {\r\n  background: url(/images/poempic_01.png) -40px 0px no-repeat;\r\n  position: absolute;\r\n  left: 4%;\r\n  z-index: 1;\r\n  width: 96%;\r\n  height: 205px;\n}\n#poempic_02 {\r\n  background: url(/images/poempic_02.png) -480px 0px no-repeat;\r\n  position: absolute;\r\n  right: 5%;\r\n  z-index: 2;\r\n  width: 495px;\r\n  height: 370px;\n}\n#poempic_05 {\r\n  background: url(/images/poempic_05.png) -110px -375px no-repeat;\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 11%;\r\n  z-index: 2;\r\n  width: 89%;\r\n  height: 124px;\n}\n#poempic_06 {\r\n  background: url(/images/poempic_09.png) -660px -50px no-repeat;\r\n  position: absolute;\r\n  bottom: 40px;\r\n  right: 40%;\r\n  z-index: 3;\r\n  width: 210px;\r\n  height: 430px;\n}\n#poempic_07 {\r\n  background: url(/images/poempic_07.png) -185px -398px no-repeat;\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 18.5%;\r\n  z-index: 5;\r\n  width: 81.5%;\r\n  height: 102px;\n}\n#poempic_08 {\r\n  background: url(/images/poempic_08.png) -560px -430px no-repeat;\r\n  position: absolute;\r\n  bottom: 0;\r\n  left: 55%;\r\n  z-index: 5;\r\n  width: 45%;\r\n  height: 70px;\n}\n.poem_content {\r\n  width: 300px;\r\n  height: 300px;\r\n  position: absolute;\r\n  top: 10%;\r\n  right: 13%;\r\n  z-index: 99;\r\n  color: white;\r\n  display: inline-block;\r\n  vertical-align: bottom;\r\n  text-align: center;\n}\n.content_bottom {\r\n  position: absolute;\r\n  bottom: 0;\r\n  width: 100%;\n}\n.poem_title {\r\n  font-size: 16px;\r\n  font-weight: bold;\n}\n#lot_num {\r\n  font-size: 30px;\n}\n.poem_btn {\r\n  background-color: #f6c26c;\r\n  color: #002b3d;\r\n  font-size: 16px;\r\n  font-weight: 900;\n}\r\n", ""]);
-
-// exports
-
-
-/***/ }),
-
 /***/ 247:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -391,7 +349,49 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 248:
+/***/ 266:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(267);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(210)("85422892", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./checkdraw.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./checkdraw.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 267:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(79)(false);
+// imports
+exports.push([module.i, "@import url(/css/basicstyle.css);", ""]);
+
+// module
+exports.push([module.i, "\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 268:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -399,11 +399,12 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "center_banner" }, [
-    _c("div", { staticClass: "content", attrs: { id: "poempic_01" } }),
+    _c("div", {
+      staticClass: "content poempic_01",
+      attrs: { id: "poempic_01" }
+    }),
     _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_02" } }),
-    _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_03" } }),
     _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_05" } }),
     _vm._v(" "),
@@ -448,6 +449,48 @@ if (false) {
     require("vue-hot-reload-api")      .rerender("data-v-03fc2db8", module.exports)
   }
 }
+
+/***/ }),
+
+/***/ 272:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(273);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(210)("37a79e09", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./checkdraw.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./checkdraw.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 273:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(79)(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.poempic_01 {\r\n  left:31% !important;\r\n  width:30% !important;\n}\r\n", ""]);
+
+// exports
+
 
 /***/ })
 
