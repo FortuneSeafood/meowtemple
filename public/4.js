@@ -1,24 +1,24 @@
 webpackJsonp([4],{
 
-/***/ 206:
+/***/ 205:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(263)
+  __webpack_require__(237)
 }
-var normalizeComponent = __webpack_require__(78)
+var normalizeComponent = __webpack_require__(79)
 /* script */
-var __vue_script__ = __webpack_require__(243)
+var __vue_script__ = __webpack_require__(239)
 /* template */
-var __vue_template__ = __webpack_require__(265)
+var __vue_template__ = __webpack_require__(240)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-544c12f0"
+var __vue_scopeId__ = "data-v-a1b84184"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -29,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/page/sign/draw.vue"
+Component.options.__file = "resources/assets/js/page/sign/index.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-544c12f0", Component.options)
+    hotAPI.createRecord("data-v-a1b84184", Component.options)
   } else {
-    hotAPI.reload("data-v-544c12f0", Component.options)
+    hotAPI.reload("data-v-a1b84184", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -315,7 +315,49 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
-/***/ 243:
+/***/ 237:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(238);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(210)("47908528", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a1b84184\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-a1b84184\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./index.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 238:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(78)(false);
+// imports
+exports.push([module.i, "@import url(/css/basicstyle.css);", ""]);
+
+// module
+exports.push([module.i, "\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 239:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -336,71 +378,23 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 // import TopBar from "../../components/layouts/TopBar";
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "SignIndex",
-  methods: {
-    getNumber: function getNumber() {
-      var title = '抽籤';
-      var content = '內容';
-      axios.post('/lottery/get/0').then(function (response) {
-        // const post = response.data.post;
-
-        console.log(response.data);
-        // this.$router.push(`/${post.id}`);
-      });
-      // console.log(data);
-      return Math.floor(Math.random() * 60) + 1;
-    }
-  }
+  created: function created() {}
 });
 
 /***/ }),
 
-/***/ 263:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(264);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(210)("6d5d9248", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-544c12f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draw.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-544c12f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draw.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 264:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(79)(false);
-// imports
-exports.push([module.i, "@import url(/css/basicstyle.css);", ""]);
-
-// module
-exports.push([module.i, "\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 265:
+/***/ 240:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -408,55 +402,130 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "center_banner" }, [
-    _c("div", { staticClass: "content", attrs: { id: "poempic_01" } }),
+    _c("div", { staticClass: "content", attrs: { id: "poempic_00" } }),
     _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_02" } }),
+    _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_05" } }),
+    _vm._m(1),
     _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_09" } }),
+    _vm._m(2),
     _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_07" } }),
+    _vm._m(3),
     _vm._v(" "),
-    _c("div", { staticClass: "content", attrs: { id: "poempic_08" } }),
+    _vm._m(4),
     _vm._v(" "),
-    _c("div", { staticClass: "poem_content" }, [
-      _c(
-        "div",
-        { staticClass: "content_bottom" },
-        [
-          _c("p", { staticClass: "poem_title" }, [
-            _vm._v("喵~ 你抽到的籤號是第"),
-            _c("span", { attrs: { id: "lot_num" } }, [
-              _vm._v(_vm._s(_vm.getNumber()))
-            ]),
-            _vm._v("籤耶，"),
-            _c("br"),
-            _vm._v("趕緊擲筊問問看是不是這支籤...")
-          ]),
-          _vm._v(" "),
-          _c(
-            "el-button",
-            { staticClass: "poem_btn", attrs: { type: "info", round: "" } },
-            [
-              _c("a", { attrs: { href: "/#/sign/checkdraw" } }, [
-                _vm._v("開始擲筊")
-              ])
-            ]
-          )
-        ],
-        1
-      )
-    ])
+    _vm._m(5),
+    _vm._v(" "),
+    _vm._m(6),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "poem_content" },
+      [
+        _vm._m(7),
+        _vm._v(" "),
+        _vm._m(8),
+        _vm._v(" "),
+        _c(
+          "el-button",
+          { staticClass: "poem_btn", attrs: { type: "info", round: "" } },
+          [_c("a", { attrs: { href: "/#/sign/draw" } }, [_vm._v("開始求籤")])]
+        )
+      ],
+      1
+    )
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_01" } }, [
+      _c("img", { attrs: { src: "images/poempic_01.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_02" } }, [
+      _c("img", { attrs: { src: "images/poempic_02.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_03" } }, [
+      _c("img", { attrs: { src: "images/poempic_03.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_05" } }, [
+      _c("img", { attrs: { src: "images/poempic_05.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_06" } }, [
+      _c("img", { attrs: { src: "images/poempic_06.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_07" } }, [
+      _c("img", { attrs: { src: "images/poempic_07.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "content", attrs: { id: "poempic_08" } }, [
+      _c("img", { attrs: { src: "images/poempic_08.png" } })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "poem_title" }, [
+      _vm._v("需要為你指點迷津嗎？"),
+      _c("br"),
+      _vm._v("只要虔誠的求問，就能獲得指引喔！")
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("ul", { staticClass: "poem_item" }, [
+      _c("li", [_vm._v("1.虔誠稟報您的姓名、年歲、住址、求問事項")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("2.點選開始求籤")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("3.擲筊請示是否為此籤")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("4.若為聖筊則可觀看詩籤內容")]),
+      _vm._v(" "),
+      _c("li", [_vm._v("5.若為笑筊或陰筊則需重新求籤")])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-544c12f0", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-a1b84184", module.exports)
   }
 }
 

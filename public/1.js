@@ -1,14 +1,15 @@
 webpackJsonp([1],{
 
-/***/ 209:
+/***/ 208:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
+  __webpack_require__(251)
   __webpack_require__(253)
 }
-var normalizeComponent = __webpack_require__(78)
+var normalizeComponent = __webpack_require__(79)
 /* script */
 var __vue_script__ = __webpack_require__(255)
 /* template */
@@ -18,7 +19,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = null
+var __vue_scopeId__ = "data-v-0429dc36"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -29,7 +30,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/page/tarot/draw.vue"
+Component.options.__file = "resources/assets/js/page/sign/drawinfo.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -38,9 +39,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-15a49ca7", Component.options)
+    hotAPI.createRecord("data-v-0429dc36", Component.options)
   } else {
-    hotAPI.reload("data-v-15a49ca7", Component.options)
+    hotAPI.reload("data-v-0429dc36", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -315,6 +316,48 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
+/***/ 251:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(252);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(210)("58811614", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./drawinfo.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./drawinfo.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 252:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(78)(false);
+// imports
+exports.push([module.i, "@import url(/css/basicstyle.css);", ""]);
+
+// module
+exports.push([module.i, "\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ 253:
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -325,13 +368,13 @@ var content = __webpack_require__(254);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(210)("343db690", content, false, {});
+var update = __webpack_require__(210)("a1c4bd60", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15a49ca7\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draw.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-15a49ca7\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draw.vue");
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./drawinfo.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-0429dc36\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./drawinfo.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -345,12 +388,12 @@ if(false) {
 /***/ 254:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(79)(false);
+exports = module.exports = __webpack_require__(78)(false);
 // imports
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\ntd > p {\n  -webkit-writing-mode: vertical-lr;\n  -ms-writing-mode: tb-rl;\n      writing-mode: vertical-rl;\n}\n.last_row {\n  width: 10%;\n  height: 100%;\n}\n.table_style {\n  border: black solid;\n  width: 100%;\n  height: 100%;\n}\n.poem_content1 {\n  width: 500px;\n  height: 400px;\n}\n.poem_btn1 {\n  position: absolute;\n  bottom: 0px;\n  right:0px;\n}\n.poem_title1 {\n  text-align: left;\n}\n.poem_table1 {\n  width: 100%;\n  height: 290px;\n}\n", ""]);
 
 // exports
 
@@ -367,10 +410,55 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 // import TopBar from "../../components/layouts/TopBar";
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "TarotDraw"
+  name: "SignIndex",
+  methods: {
+    getNumber: function getNumber() {
+      var title = '抽籤';
+      var content = '內容';
+      axios.post('/lottery/get/0').then(function (response) {
+        var post = response.data.post;
+
+        console.log(response.data);
+        // this.$router.push(`/${post.id}`);
+      });
+      // console.log(data);
+      return Math.floor(Math.random() * 60) + 1;
+    }
+  }
 });
 
 /***/ }),
@@ -382,15 +470,88 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n  draw\n")])
+  return _c("div", { staticClass: "center_banner" }, [
+    _c("div", { staticClass: "content", attrs: { id: "poempic_01" } }),
+    _vm._v(" "),
+    _c("div", { staticClass: "content", attrs: { id: "poempic_05" } }),
+    _vm._v(" "),
+    _c("div", { staticClass: "content", attrs: { id: "poempic_06" } }),
+    _vm._v(" "),
+    _c("div", { staticClass: "content", attrs: { id: "poempic_07" } }),
+    _vm._v(" "),
+    _c("div", { staticClass: "content", attrs: { id: "poempic_08" } }),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "poem_content poem_content1" },
+      [
+        _c("p", { staticClass: "poem_title poem_title1" }, [
+          _vm._v("詩籤號碼：" + _vm._s(_vm.getNumber()))
+        ]),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _c(
+          "el-button",
+          {
+            staticClass: "poem_btn poem_btn1",
+            attrs: { type: "info", round: "" }
+          },
+          [_c("a", { attrs: { href: "/#/sign/ready" } }, [_vm._v("繼續求籤")])]
+        )
+      ],
+      1
+    )
+  ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "poem_table poem_table1" }, [
+      _c("table", { staticClass: "table_style" }, [
+        _c("tr", [
+          _c("td", [
+            _c("p", [_vm._v("丁口")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("官司")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("婚姻")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("行人")]),
+            _vm._v(" "),
+            _c("p", [_vm._v("功名")])
+          ]),
+          _vm._v(" "),
+          _c("td", { staticClass: "last_row", attrs: { rowspan: "2" } }, [
+            _vm._v("湄洲天上聖母籤")
+          ])
+        ]),
+        _vm._v(" "),
+        _c("tr", [
+          _c("td", [
+            _c("div", [_vm._v("田畜")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("失物")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("出行")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("疾病")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("生意")])
+          ])
+        ])
+      ])
+    ])
+  }
+]
 render._withStripped = true
 module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-15a49ca7", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-0429dc36", module.exports)
   }
 }
 

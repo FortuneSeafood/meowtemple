@@ -1,7 +1,8 @@
 .center_banner {
-    position: relative;
     height: 100%;
-    min-height: 465px;
+    min-height: 700px;
+    min-width: 1024px;
+    text-align: center;
   }
   #poempic_00 {
     position: absolute;
@@ -10,64 +11,52 @@
     z-index: 1;
   }
   #poempic_01 {
-    background: url(/images/poempic_01.png) -40px 0px no-repeat;
-    position: absolute;
-    left: 4%;
-    z-index: 1;
-    width: 96%;
-    height: 205px;
+    position:absolute;
+    left:0px;
+    right:0px;
+    z-index:1;
   }
   #poempic_02 {
-    background: url(/images/poempic_02.png) -480px 0px no-repeat;
-    position: absolute;
-    right: 5%;
-    z-index: 2;
-    width: 495px;
-    height: 370px;
+    position:absolute;
+    left:0px;
+    right:0px;
+    z-index:2;
   }
   #poempic_03 {
-    background: url(/images/poempic_03.png) -780px 0px no-repeat;
-    position: absolute;
-    right: 20%;
-    z-index: 2;
-    width: 160px;
-    height: 160px;
+    position:absolute;
+    left:0px;
+    right:0px;
+    z-index:2;
   }
   #poempic_05 {
-    background: url(/images/poempic_05.png) -110px -375px no-repeat;
-    position: absolute;
+    position:absolute;
     bottom: 0;
-    left: 12%;
-    z-index: 2;
-    width: 22%;
-    height: 124px;
+    left:0px;
+    right:0px;
+    z-index:2;
+    margin: 0px auto;
   }
   #poempic_06 {
-    background: url(/images/poempic_06.png) -660px -50px no-repeat;
-    position: absolute;
-    bottom: 40px;
-    right: 50%;
-    z-index: 3;
-    width: 210px;
-    height: 430px;
+    position:absolute;
+    bottom: 0;
+    left:0px;
+    right:0px;
+    z-index:3;
+    margin: 0px auto;
   }
   #poempic_07 {
-    background: url(/images/poempic_07.png) -185px -398px no-repeat;
-    position: absolute;
+    position:absolute;
     bottom: 0;
-    left: 23.5%;
-    z-index: 5;
-    width: 40.5%;
-    height: 102px;
+    left:0px;
+    right:0px;
+    z-index:5;
   }
   #poempic_08 {
-    background: url(/images/poempic_08.png) -560px -430px no-repeat;
-    position: absolute;
+    position:absolute;
     bottom: 0;
-    left: 55%;
-    z-index: 5;
-    width: 22%;
-    height: 70px;
+    left:0px;
+    right:0px;
+    z-index:5;
   }
 
   #poempic_09 {
@@ -81,15 +70,13 @@
   }
   .poem_content {
     width: 300px;
-    height: 300px;
-    position: absolute;
-    top: 10%;
-    right: 13%;
-    z-index: 99;
+    position:absolute;
+    top: 230px;
+    margin-left: -150px;
+    z-index:2;
     color: white;
     display: inline-block;
-    vertical-align: bottom;
-    text-align: center;
+    vertical-align: middle;
   }
   .content_bottom {
     position: absolute;
@@ -110,4 +97,8 @@
     color: #002b3d;
     font-size: 16px;
     font-weight: 900;
+  }
+
+  .content{
+    text-align: center;
   }

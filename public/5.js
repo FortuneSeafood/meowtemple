@@ -1,25 +1,24 @@
 webpackJsonp([5],{
 
-/***/ 207:
+/***/ 206:
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(266)
-  __webpack_require__(272)
+  __webpack_require__(241)
 }
-var normalizeComponent = __webpack_require__(78)
+var normalizeComponent = __webpack_require__(79)
 /* script */
-var __vue_script__ = __webpack_require__(247)
+var __vue_script__ = __webpack_require__(243)
 /* template */
-var __vue_template__ = __webpack_require__(268)
+var __vue_template__ = __webpack_require__(244)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-03fc2db8"
+var __vue_scopeId__ = "data-v-544c12f0"
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -30,7 +29,7 @@ var Component = normalizeComponent(
   __vue_scopeId__,
   __vue_module_identifier__
 )
-Component.options.__file = "resources/assets/js/page/sign/checkdraw.vue"
+Component.options.__file = "resources/assets/js/page/sign/draw.vue"
 
 /* hot reload */
 if (false) {(function () {
@@ -39,9 +38,9 @@ if (false) {(function () {
   if (!hotAPI.compatible) return
   module.hot.accept()
   if (!module.hot.data) {
-    hotAPI.createRecord("data-v-03fc2db8", Component.options)
+    hotAPI.createRecord("data-v-544c12f0", Component.options)
   } else {
-    hotAPI.reload("data-v-03fc2db8", Component.options)
+    hotAPI.reload("data-v-544c12f0", Component.options)
   }
   module.hot.dispose(function (data) {
     disposed = true
@@ -316,11 +315,54 @@ module.exports = function listToStyles (parentId, list) {
 
 /***/ }),
 
-/***/ 247:
+/***/ 241:
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(242);
+if(typeof content === 'string') content = [[module.i, content, '']];
+if(content.locals) module.exports = content.locals;
+// add the styles to the DOM
+var update = __webpack_require__(210)("6d5d9248", content, false, {});
+// Hot Module Replacement
+if(false) {
+ // When the styles change, update the <style> tags
+ if(!content.locals) {
+   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-544c12f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draw.vue", function() {
+     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-544c12f0\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./draw.vue");
+     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+     update(newContent);
+   });
+ }
+ // When the module is disposed, remove the <style> tags
+ module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
+/***/ 242:
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(78)(false);
+// imports
+exports.push([module.i, "@import url(/css/basicstyle.css);", ""]);
+
+// module
+exports.push([module.i, "\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ 243:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
 //
 //
 //
@@ -342,6 +384,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
   name: "SignIndex",
   methods: {
     getNumber: function getNumber() {
+      var title = '抽籤';
+      var content = '內容';
+      axios.post('/lottery/get/0').then(function (response) {
+        // const post = response.data.post;
+
+        console.log(response.data);
+        // this.$router.push(`/${post.id}`);
+      });
+      // console.log(data);
       return Math.floor(Math.random() * 60) + 1;
     }
   }
@@ -349,49 +400,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 /***/ }),
 
-/***/ 266:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(267);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(210)("85422892", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./checkdraw.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":true,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./checkdraw.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 267:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(79)(false);
-// imports
-exports.push([module.i, "@import url(/css/basicstyle.css);", ""]);
-
-// module
-exports.push([module.i, "\n", ""]);
-
-// exports
-
-
-/***/ }),
-
-/***/ 268:
+/***/ 244:
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -399,14 +408,13 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "center_banner" }, [
-    _c("div", {
-      staticClass: "content poempic_01",
-      attrs: { id: "poempic_01" }
-    }),
+    _c("div", { staticClass: "content", attrs: { id: "poempic_01" } }),
     _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_02" } }),
     _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_05" } }),
+    _vm._v(" "),
+    _c("div", { staticClass: "content", attrs: { id: "poempic_09" } }),
     _vm._v(" "),
     _c("div", { staticClass: "content", attrs: { id: "poempic_07" } }),
     _vm._v(" "),
@@ -418,19 +426,21 @@ var render = function() {
         { staticClass: "content_bottom" },
         [
           _c("p", { staticClass: "poem_title" }, [
-            _vm._v("喵~ 聖茭!就是這支籤了，"),
+            _vm._v("喵~ 你抽到的籤號是第"),
+            _c("span", { attrs: { id: "lot_num" } }, [
+              _vm._v(_vm._s(_vm.getNumber()))
+            ]),
+            _vm._v("籤耶，"),
             _c("br"),
-            _vm._v("趕緊來看看詩籤上說些甚麼吧!"),
-            _c("br"),
-            _vm._v("詩籤號碼：" + _vm._s(_vm.getNumber()))
+            _vm._v("趕緊擲筊問問看是不是這支籤...")
           ]),
           _vm._v(" "),
           _c(
             "el-button",
             { staticClass: "poem_btn", attrs: { type: "info", round: "" } },
             [
-              _c("a", { attrs: { href: "/#/sign/drawinfo" } }, [
-                _vm._v("觀看詩籤")
+              _c("a", { attrs: { href: "/#/sign/checkdraw" } }, [
+                _vm._v("開始擲筊")
               ])
             ]
           )
@@ -446,51 +456,9 @@ module.exports = { render: render, staticRenderFns: staticRenderFns }
 if (false) {
   module.hot.accept()
   if (module.hot.data) {
-    require("vue-hot-reload-api")      .rerender("data-v-03fc2db8", module.exports)
+    require("vue-hot-reload-api")      .rerender("data-v-544c12f0", module.exports)
   }
 }
-
-/***/ }),
-
-/***/ 272:
-/***/ (function(module, exports, __webpack_require__) {
-
-// style-loader: Adds some css to the DOM by adding a <style> tag
-
-// load the styles
-var content = __webpack_require__(273);
-if(typeof content === 'string') content = [[module.i, content, '']];
-if(content.locals) module.exports = content.locals;
-// add the styles to the DOM
-var update = __webpack_require__(210)("37a79e09", content, false, {});
-// Hot Module Replacement
-if(false) {
- // When the styles change, update the <style> tags
- if(!content.locals) {
-   module.hot.accept("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./checkdraw.vue", function() {
-     var newContent = require("!!../../../../../node_modules/css-loader/index.js!../../../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-03fc2db8\",\"scoped\":false,\"hasInlineConfig\":true}!../../../../../node_modules/vue-loader/lib/selector.js?type=styles&index=1!./checkdraw.vue");
-     if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-     update(newContent);
-   });
- }
- // When the module is disposed, remove the <style> tags
- module.hot.dispose(function() { update(); });
-}
-
-/***/ }),
-
-/***/ 273:
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(79)(false);
-// imports
-
-
-// module
-exports.push([module.i, "\n.poempic_01 {\r\n  left:31% !important;\r\n  width:30% !important;\n}\r\n", ""]);
-
-// exports
-
 
 /***/ })
 
