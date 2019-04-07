@@ -8,7 +8,7 @@ function injectStyle (ssrContext) {
   if (disposed) return
   __webpack_require__(231)
 }
-var normalizeComponent = __webpack_require__(78)
+var normalizeComponent = __webpack_require__(79)
 /* script */
 var __vue_script__ = __webpack_require__(233)
 /* template */
@@ -345,7 +345,7 @@ if(false) {
 /***/ 232:
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(79)(false);
+exports = module.exports = __webpack_require__(78)(false);
 // imports
 
 

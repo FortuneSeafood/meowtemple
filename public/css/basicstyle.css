@@ -1,0 +1,104 @@
+.center_banner {
+    height: 100%;
+    min-height: 700px;
+    min-width: 1024px;
+    text-align: center;
+  }
+  #poempic_00 {
+    position: absolute;
+    top: 69px;
+    left: 14.5%;
+    z-index: 1;
+  }
+  #poempic_01 {
+    position:absolute;
+    left:0px;
+    right:0px;
+    z-index:1;
+  }
+  #poempic_02 {
+    position:absolute;
+    left:0px;
+    right:0px;
+    z-index:2;
+  }
+  #poempic_03 {
+    position:absolute;
+    left:0px;
+    right:0px;
+    z-index:2;
+  }
+  #poempic_05 {
+    position:absolute;
+    bottom: 0;
+    left:0px;
+    right:0px;
+    z-index:2;
+    margin: 0px auto;
+  }
+  #poempic_06 {
+    position:absolute;
+    bottom: 0;
+    left:0px;
+    right:0px;
+    z-index:3;
+    margin: 0px auto;
+  }
+  #poempic_07 {
+    position:absolute;
+    bottom: 0;
+    left:0px;
+    right:0px;
+    z-index:5;
+  }
+  #poempic_08 {
+    position:absolute;
+    bottom: 0;
+    left:0px;
+    right:0px;
+    z-index:5;
+  }
+
+  #poempic_09 {
+    background: url(/images/poempic_09.png) -660px -50px no-repeat;
+    position: absolute;
+    bottom: 40px;
+    right: 50%;
+    z-index: 3;
+    width: 210px;
+    height: 430px;
+  }
+  .poem_content {
+    width: 300px;
+    position:absolute;
+    top: 230px;
+    margin-left: -150px;
+    z-index:2;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .content_bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .poem_title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .poem_item {
+    font-size: 13px;
+    list-style-type: none;
+    text-align: left;
+  }
+  .poem_btn {
+    background-color: #f6c26c;
+    color: #002b3d;
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  .content{
+    text-align: center;
+  }

@@ -1,17 +1,36 @@
 <template>
   <div class="center_banner">
     <div id="poempic_01" class="content"></div>
-    <div id="poempic_02" class="content"></div>
-    <div id="poempic_03" class="content"></div>
     <div id="poempic_05" class="content"></div>
     <div id="poempic_06" class="content"></div>
     <div id="poempic_07" class="content"></div>
     <div id="poempic_08" class="content"></div>
-    <div class="poem_content">
-      <div class="content_bottom">
-        <p class="poem_title">詩籤號碼：{{getNumber()}}</p>
-        <el-button class="poem_btn" type="info" round><a href="/#/sign/ready">繼續求籤</a></el-button>
+    <div class="poem_content poem_content1">
+      <p class="poem_title poem_title1">詩籤號碼：{{getNumber()}}</p>
+      <div class="poem_table poem_table1">
+        <table class="table_style">
+          <tr>
+            <td>
+              <p>丁口</p>
+              <p>官司</p>
+              <p>婚姻</p>
+              <p>行人</p>
+              <p>功名</p>
+            </td>
+            <td rowspan="2" class="last_row">湄洲天上聖母籤</td>
+          </tr>
+          <tr>
+            <td>
+              <div>田畜</div>
+              <div>失物</div>
+              <div>出行</div>
+              <div>疾病</div>
+              <div>生意</div>
+            </td>
+          </tr>
+        </table>
       </div>
+      <el-button class="poem_btn poem_btn1" type="info" round><a href="/#/sign/ready">繼續求籤</a></el-button>
     </div>
   </div>
 </template>
@@ -26,7 +45,7 @@ export default {
        axios
         .post('/lottery/get/0')
         .then(response => {
-          // const post = response.data.post;
+          const post = response.data.post;
 
           console.log(response.data);
           // this.$router.push(`/${post.id}`);
@@ -37,100 +56,41 @@ export default {
   }
 };
 </script>
+<style scoped>
+  @import '/css/basicstyle.css';
+</style>
+
 <style>
-.center_banner {
-  position: relative;
+td > p {
+  -webkit-writing-mode: vertical-lr;
+  writing-mode: vertical-rl;
+}
+.last_row {
+  width: 10%;
   height: 100%;
-  min-height: 465px;
 }
-#poempic_01 {
-  background: url(/images/poempic_01.png) -40px 0px no-repeat;
-  position: absolute;
-  left: 4%;
-  z-index: 1;
-  width: 96%;
-  height: 205px;
-}
-#poempic_02 {
-  background: url(/images/poempic_02.png) -480px 0px no-repeat;
-  position: absolute;
-  right: 5%;
-  z-index: 2;
-  width: 495px;
-  height: 370px;
-}
-#poempic_03 {
-  background: url(/images/poempic_03.png) -780px 0px no-repeat;
-  position: absolute;
-  right: 20%;
-  z-index: 2;
-  width: 160px;
-  height: 160px;
-}
-#poempic_05 {
-  background: url(/images/poempic_05.png) -110px -375px no-repeat;
-  position: absolute;
-  bottom: 0;
-  left: 11%;
-  z-index: 2;
-  width: 89%;
-  height: 124px;
-}
-#poempic_06 {
-  background: url(/images/poempic_09.png) -660px -50px no-repeat;
-  position: absolute;
-  bottom: 40px;
-  right: 40%;
-  z-index: 3;
-  width: 210px;
-  height: 430px;
-}
-#poempic_07 {
-  background: url(/images/poempic_07.png) -185px -398px no-repeat;
-  position: absolute;
-  bottom: 0;
-  left: 18.5%;
-  z-index: 5;
-  width: 81.5%;
-  height: 102px;
-}
-#poempic_08 {
-  background: url(/images/poempic_08.png) -560px -430px no-repeat;
-  position: absolute;
-  bottom: 0;
-  left: 55%;
-  z-index: 5;
-  width: 45%;
-  height: 70px;
-}
-.poem_content {
-  width: 300px;
-  height: 300px;
-  position: absolute;
-  top: 10%;
-  right: 13%;
-  z-index: 99;
-  color: white;
-  display: inline-block;
-  vertical-align: bottom;
-  text-align: center;
-}
-.content_bottom {
-  position: absolute;
-  bottom: 0;
+.table_style {
+  border: black solid;
   width: 100%;
+  height: 100%;
 }
-.poem_title {
-  font-size: 16px;
-  font-weight: bold;
+.poem_content1 {
+  width: 500px;
+  height: 400px;
 }
-#lot_num {
-  font-size: 30px;
+
+.poem_btn1 {
+  position: absolute;
+  bottom: 0px;
+  right:0px;
 }
-.poem_btn {
-  background-color: #f6c26c;
-  color: #002b3d;
-  font-size: 16px;
-  font-weight: 900;
+
+.poem_title1 {
+  text-align: left;
+}
+
+.poem_table1 {
+  width: 100%;
+  height: 290px;
 }
 </style>
