@@ -31,6 +31,17 @@ export default new VueRouter({
             ]
         },
         {
+            path: "/dream",
+            name: "dream",
+            component: resolve => void require(["../page/layouts/style.vue"], resolve),
+            children: [
+                {
+                  path: 'index',
+                  component: resolve => void require(["../page/dream/index.vue"], resolve),
+                }
+            ]
+        },
+        {
             path: "/sign",
             name: "sign",
             component: resolve => void require(["../page/layouts/style.vue"], resolve),
