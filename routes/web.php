@@ -22,3 +22,4 @@ Route::get('/test1', 'Example\Test@testGetAndService');
 Route::get('/test2', 'Example\Test@testGetDB');
 Route::post('/lottery/get/{LotteryID}', 'Lottery\Divination@get');
 Route::get('/lottery/index', 'Lottery\Divination@index');
+Route::get('/dream', 'Dream\Main@index');
