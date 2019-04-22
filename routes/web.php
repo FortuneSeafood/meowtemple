@@ -23,3 +23,5 @@ Route::get('/test2', 'Example\Test@testGetDB');
 Route::post('/lottery/get/{LotteryID}', 'Lottery\Divination@get');
 Route::get('/lottery/index', 'Lottery\Divination@index');
 Route::get('/dream', 'Dream\Main@index');
+Route::post('/dream/list/{keywords}', 'Dream\Main@getList');
+Route::post('/dream/info/{keywords}', 'Dream\Main@getInfo');

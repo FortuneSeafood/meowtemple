@@ -23,10 +23,6 @@ export default new VueRouter({
                 {
                     path: 'home',
                     component: resolve => void require(["../page/home/home.vue"], resolve),
-                },
-                {
-                    path: 'lottery',
-                    component: resolve => void require(["../page/lottery/draw.vue"], resolve)
                 }
             ]
         },
@@ -38,6 +34,14 @@ export default new VueRouter({
                 {
                   path: 'index',
                   component: resolve => void require(["../page/dream/index.vue"], resolve),
+                },
+                {
+                  path: 'search',
+                  component: resolve => void require(["../page/dream/search.vue"], resolve),
+                },
+                {
+                  path: 'info',
+                  component: resolve => void require(["../page/dream/info.vue"], resolve),
                 }
             ]
         },

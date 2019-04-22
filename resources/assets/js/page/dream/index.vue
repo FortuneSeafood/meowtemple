@@ -15,7 +15,7 @@
         <span id="keywords">
           <el-input placeholder="请输入夢見什麼" v-model="keywords" clearable></el-input>
         </span>
-        <el-button class="search_btn" type="info" round><a href="#">開始解夢</a></el-button>
+        <router-link :to="{path: '/dream/search', query: {keywords: keywords}}"><el-button class="search_btn" type="warning" round>開始解夢</el-button></router-link>
         <div class="sample font-13">常見的夢：
           <span v-for="word in sample">{{word}}</span>
         </div>

@@ -1,14 +1,14 @@
 <template>
 <div>
   <div class="logo">
-      <a href="" title="Meow temple" id="logo"><img src="/images/logo.png" alt="" height="86px" width="204px"></a>
+      <a href="/" title="Meow temple" id="logo"><img src="/images/logo.png" alt="" height="86px" width="204px"></a>
   </div>
     <div class="container rightbox">
         <div class="main clearfix">
             <nav id="menu" class="nav"><button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>
                 <ul>
                     <li id="slide_down" @mouseenter="enter()" @mouseleave="leave()" :class="{ slide: isActive }">
-                        <a href="lottery/index/#/sign/ready" >
+                        <a href="/lottery/index/#/sign/ready" >
                             <span class="icon"></span>
                             <span class="menu_icon">
                                 <img src="/images/poem.png"><div class="menu_text">指路詩籤</div>
@@ -16,7 +16,7 @@
                         </a>
                     </li>
                     <li id="slide_down2" @mouseenter="enter2()" @mouseleave="leave2()" :class="{ slide2: isActive2 }">
-                        <a href="">
+                        <a href="/dream/#/dream/index">
                             <span class="icon"></span>
                             <span class="menu_icon">
                                 <img src="/images/dream.png"><div class="menu_text">夢的意境</div>

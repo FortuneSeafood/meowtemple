@@ -35,7 +35,7 @@ a:hover {
 
 .main {
 	max-width: 82.667em;
-	min-height: 40em;
+	/*min-height: 40em;*/
 }
 
 .container > header {
